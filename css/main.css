@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+}
+
+.body__bg {
+  background-image: url(../media/bg.gif);
+  z-index: -1000;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.tomboy {
+  padding-top: 43px;
+}
+
+.tomboy .tomboy__logo {
+  width: 40vw;
+  transform: rotate(-14deg);
+}
+
+main .body__cross {
+  display: inline-block;
+  justify-content: space-around;
+}
+
+main .body__cross .body__cross--1 {
+  height: 30vh;
+  opacity: 73%;
+  position: absolute;
+  left: 87vw;
+  top: 68vh;
+}
+
+main .body__cross .body__cross--2 {
+  height: 30vh;
+  opacity: 73%;
+  position: absolute;
+  top: 82vh;
+  right: 89vw;
+}
+
+main .body__cross .body__cross--3 {
+  height: 30vh;
+  opacity: 73%;
+  position: absolute;
+  right: 20vw;
+  bottom: 81vh;
+}
+
+main .body__cross .body__cross--4 {
+  height: 30vh;
+  opacity: 73%;
+  position: absolute;
+  left: 95vw;
+  top: 21vh;
+}
+/*# sourceMappingURL=main.css.map */

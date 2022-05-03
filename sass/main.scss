@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+@import 'vars';
+
+body{
+    overflow: hidden;
+}
+.body__bg{
+    background-image: url(../media/bg.gif);
+    z-index: -1000;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.tomboy{
+    .tomboy__logo {
+        width: 40vw;
+        transform: rotate(-14deg);
+    }
+    padding-top: 43px;
+}
+main{
+    .body__cross{
+        display: inline-block;
+        justify-content:space-around;
+        .body__cross--1{
+            @include cross;
+            left: 87vw;
+            top: 68vh;
+        }
+        .body__cross--2{
+            @include cross;
+            top: 82vh;
+            right: 89vw
+        }
+        .body__cross--3{
+            @include cross;
+            right: 20vw;
+            bottom: 81vh;
+        }
+        .body__cross--4{
+            @include cross;
+            left: 95vw;
+            top: 21vh;
+        }
+    }
+}
