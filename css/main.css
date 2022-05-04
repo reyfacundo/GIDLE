@@ -10,6 +10,56 @@
   background-image: url(../media/background.png);
 }
 
+.videos__background .logo {
+  display: flex;
+  justify-content: center;
+}
+
+.videos__background .logo img {
+  width: 16vw;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+}
+
+.nav .navbar-nav li {
+  margin-right: 1vw;
+  margin-left: 1vw;
+  display: flex;
+  align-items: center;
+}
+
+.nav .navbar-nav li a {
+  font-family: 'Ceviche One', cursive;
+  font-size: 32px;
+}
+
+footer {
+  width: 100%;
+  height: 6vh;
+  background: #d4314744;
+  position: absolute;
+  bottom: 0;
+}
+
+footer .socials {
+  display: flex;
+  justify-content: center;
+  padding-top: 0.7vw;
+  margin-right: 55px;
+}
+
+footer .socials .bi {
+  margin-left: 1vw;
+  cursor: pointer;
+}
+
+footer .socials svg {
+  height: 25px;
+}
+
 body {
   overflow: hidden;
 }
@@ -91,7 +141,7 @@ main .enter {
 main .enter h1 {
   text-align: center;
   font-family: 'Ceviche One', cursive;
-  color: beige;
+  color: #ffe2e2;
   opacity: 90%;
 }
 
@@ -102,7 +152,7 @@ main .enter a {
 main .enter__bg {
   display: flex;
   justify-content: center;
-  margin-top: 110px;
+  margin-top: 190px;
 }
 
 main .enter__bg .enter__bg--png {
