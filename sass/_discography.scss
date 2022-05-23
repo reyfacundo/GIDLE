@@ -1,0 +1,44 @@
+.carousel{
+    margin: auto;
+    margin-top: 2vh;
+    width: 30vw;
+    .carousel-item{
+        width: 30vw;
+    }
+}
+.title__carousel{
+    text-align: center;
+    img{
+        height: 11vh;
+    }
+}
+.carousel{
+    box-shadow: 30 30 30 4 blue;
+}
+
+/* Mq tablet */
+@media (min-width: 576px) and (max-width: 992px){
+    .carousel{
+        width: 42vw;
+        .carousel-item{
+            width: 42vw;
+        }
+    }
+}
+
+/* Mq mobile */
+@media (max-width: 576px) {
+    .carousel{
+        height: 100%;
+        margin-top: 19vh;
+    }
+    .carousel-item{
+        width: 3vw;
+    }
+    .title__carousel{
+        margin-top: 4vh;
+        img{
+            height: 9vh;
+        }
+    }
+}

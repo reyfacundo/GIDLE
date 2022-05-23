@@ -6,62 +6,216 @@
   text-decoration: none;
 }
 
-.videos__background {
-  background-image: url(../media/background.png);
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-.videos__background .logo {
+html, body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.body__background {
+  background-image: url(../media/bg.gif);
+  z-index: -1000;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header .navbar .navbar-brand-img {
+  height: 12vh;
+}
+
+header .navbar .navbar-nav {
+  font-family: 'Caveat Brush', cursive;
+  font-weight: bold;
+  font-size: 1.4rem;
+  letter-spacing: 1.4px;
+}
+
+header .navbar .navbar-nav a {
+  color: beige;
+}
+
+header .navbar .navbar-nav a:hover {
+  color: #ee2b4c;
+}
+
+.app {
+  position: relative;
+  width: 100%;
+  height: 100%;
   display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.home {
+  flex-grow: 1;
+  min-height: 0;
+  overflow: auto;
+}
+
+.home .home__videos--flex {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-}
-
-.videos__background .logo img {
-  width: 16vw;
-}
-
-.nav {
-  display: flex;
-  justify-content: center;
-}
-
-.nav .navbar-nav li {
-  margin-right: 1vw;
-  margin-left: 1vw;
-  display: flex;
   align-items: center;
 }
 
-.nav .navbar-nav li a {
-  font-family: 'Ceviche One', cursive;
-  font-size: 32px;
+.home .home__videos--flex .container--title {
+  padding-bottom: 4vh;
+}
+
+.home .home__videos--flex .container--title img {
+  height: 12vh;
+}
+
+.home .home__videos--flex .container--iframes iframe {
+  width: 8vw;
+  height: 49vh;
+  margin: 15px;
+  transition: width .5s, transform .5s, filter 1s ease-in-out;
+  filter: grayscale(100%);
+  z-index: 1;
+}
+
+.home .home__videos--flex iframe:hover {
+  width: 30vw;
+  transform: scale(1.2);
+  filter: grayscale(0);
+  z-index: 2;
+}
+
+.home .home__videos--flex .container--bg {
+  box-shadow: -16px -10px 0px 0px #e23652;
 }
 
 footer {
+  background: rgba(66, 55, 58, 0.87);
   width: 100%;
-  height: 6vh;
-  background: #d4314744;
-  position: absolute;
-  bottom: 0;
+  padding-top: 10px;
+}
+
+footer .footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
 }
 
 footer .socials {
+  list-style: none;
   display: flex;
+  align-items: center;
   justify-content: center;
-  padding-top: 0.7vw;
-  margin-right: 55px;
+  margin: 4px 0 8px 0;
+  padding: 0;
 }
 
-footer .socials .bi {
-  margin-left: 1vw;
-  cursor: pointer;
+footer .socials li {
+  margin: 0 7px;
 }
 
-footer .socials svg {
-  height: 25px;
+footer .socials a {
+  text-decoration: none;
 }
 
-body {
-  overflow: hidden;
+footer .socials a i {
+  font-size: 1.6rem;
+  color: #e24869;
+}
+
+/* Mq tablet */
+@media (min-width: 576px) and (max-width: 992px) {
+  .home .home__videos--flex .container--iframes iframe {
+    transition: none;
+    filter: none;
+  }
+  .home .home__videos--flex iframe:hover {
+    transform: none;
+    transition: none;
+  }
+}
+
+/* Mq mobile */
+@media (max-width: 576px) {
+  .home .home__videos--flex .container--iframes {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10vw;
+  }
+  .home .home__videos--flex .container--iframes iframe {
+    width: 34vw;
+    height: 27vh;
+    margin: 8px;
+    flex-wrap: wrap;
+    transition: none;
+    filter: none;
+  }
+  .home .home__videos--flex .container--iframes iframe:hover {
+    transform: none;
+    transition: none;
+  }
+  .home .home__videos--flex .container--title img {
+    height: 8vh;
+  }
+}
+
+.carousel {
+  margin: auto;
+  margin-top: 2vh;
+  width: 30vw;
+}
+
+.carousel .carousel-item {
+  width: 30vw;
+}
+
+.title__carousel {
+  text-align: center;
+}
+
+.title__carousel img {
+  height: 11vh;
+}
+
+.carousel {
+  box-shadow: 30 30 30 4 blue;
+}
+
+/* Mq tablet */
+@media (min-width: 576px) and (max-width: 992px) {
+  .carousel {
+    width: 42vw;
+  }
+  .carousel .carousel-item {
+    width: 42vw;
+  }
+}
+
+/* Mq mobile */
+@media (max-width: 576px) {
+  .carousel {
+    height: 100%;
+    margin-top: 19vh;
+  }
+  .carousel-item {
+    width: 3vw;
+  }
+  .title__carousel {
+    margin-top: 4vh;
+  }
+  .title__carousel img {
+    height: 9vh;
+  }
 }
 
 .body__bg {

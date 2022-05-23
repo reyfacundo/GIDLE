@@ -7,10 +7,10 @@
 }
 @import 'vars';
 @import 'videos';
+@import 'discography';
+@import 'members';
 
-body{
-    overflow: hidden;
-}
+
 .body__bg{
     background-image: url(../media/bg.gif);
     z-index: -1000;
