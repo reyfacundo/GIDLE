@@ -3,12 +3,13 @@
     padding: 0;
     box-sizing:border-box;
     list-style: none;
-    text-decoration: none
+    text-decoration: none;
 }
-@import 'vars';
 @import 'videos';
 @import 'discography';
 @import 'members';
+@import 'contact';
+@import 'mq';
 
 
 .body__bg{
@@ -18,71 +19,44 @@
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
-}
-.tomboy{
-    .tomboy__logo {
-        width: 40vw;
-        transform: rotate(-14deg);
+    .tomboy{
+        .tomboy__logo {
+            width: 33vw;
+            transform: rotate(-14deg);
+        }
+        padding-top: 43px;
     }
-    padding-top: 43px;
-}
-main{
-    .body__cross{
-        display: inline-block;
-        justify-content:space-around;
-        .body__cross--1{
-            @include cross;
-            left: 87vw;
-            top: 68vh;
-        }
-        .body__cross--2{
-            @include cross;
-            top: 82vh;
-            right: 89vw
-        }
-        .body__cross--3{
-            @include cross;
-            right: 20vw;
-            bottom: 81vh;
-        }
-        .body__cross--4{
-            @include cross;
-            left: 95vw;
-            top: 21vh;
-        }
-    }
-    .play{
-        .bi{
-            color: #d2465a;
-            width: 60px;
-            height: 60px;
-            box-shadow:0px 5px 90px 20px #e23652;
-            border-radius: 100px
-            ;
-        }
+    .index__iframe{
         display: flex;
         justify-content: center;
-        margin-top: 9vh;
+        iframe{
+            box-shadow: 0px 0px 200px -90px #ffffff,0px 5px 90px 0px #e23652;
+            width: 490px;
+            height: 380px;
         }
+    }
     .enter{
-        h1{
-            text-align: center;
-            font-family: 'Ceviche One', cursive;
-            color: #ffe2e2;
-            opacity: 90%;
-        }
-        a{
-            text-decoration: none;
-        }
-        margin-top: -100px;
-        margin-right: 15px;
-    }
-    .enter__bg{
+        height: auto;
         display: flex;
         justify-content: center;
-        margin-top: 190px;
-        .enter__bg--png{
-            height: 150px;
+        padding-top: 7vh;
+        button{
+            background-color: beige;
+            text-align: center;
+            font-size: 1.2rem;
+            letter-spacing:0.2rem;
+            border-radius: 10px;
+            padding: 1vh 1vw;
+            border: none;
+            cursor: pointer;
+            font-family: 'Teko', sans-serif;
+            font-weight: 700;
+            &:hover{
+                background-color: #e23652;
+            }
+            &:active{
+                background-color: #e23652;
+            }
         }
     }
 }

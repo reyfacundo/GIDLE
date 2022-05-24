@@ -1,0 +1,124 @@
+/* Media queries */
+
+/* index */
+@media (min-width: 576px) and (max-width: 992px){
+    .body__bg{
+        .index__iframe{
+            padding-top: 24vh;
+            iframe{
+                width: 90vw;
+                height: 40vh;
+            }
+        }
+    }
+}
+@media (max-width: 576px) {
+    .body__bg{
+        .index__iframe{
+            padding-top: 20vh;
+            iframe{
+                width: 70vw;
+                height: 40vh;
+            }
+        }
+    }
+}
+
+/* videos */
+@media (min-width: 576px) and (max-width: 992px){
+    .home{
+        .home__videos--flex{
+            .container--iframes iframe{
+                transition: none;
+                filter: none;
+            }
+            & iframe:hover{
+                transform: none;
+                transition: none;
+            }
+        }
+    }
+}
+@media (max-width: 576px) {
+    .home{
+        .home__videos--flex{
+            .container--iframes{
+                display: grid;
+                grid-template-columns: auto auto;
+                gap: 10vw;
+                & iframe{
+                    width: 34vw;
+                    height: 27vh;
+                    margin: 8px;
+                    flex-wrap: wrap;
+                    transition: none;
+                    filter: none;
+                }
+                & iframe:hover{
+                    transform: none;
+                    transition: none;
+                }
+            }
+            .container--title{
+                img{
+                    height: 8vh;
+                }
+            }
+        }
+    }
+}
+/* contact */
+
+@media (max-width: 576px) {
+    .contact{
+        .contact__title{
+            img{
+                height: 7vh;
+            }
+        }
+        & form{
+        width: 75%;
+        height: 50%;
+        box-shadow: 9px 9px 0px 2px #dd4067;
+        }
+    }
+}
+/* members */
+@media (max-width: 576px) {
+    .home__members{
+        .gallery__members{
+            padding-bottom: 3vh;
+        }
+        .home__members--flex{
+            .title__members{
+                img{
+                    height: 10vh;
+                }
+            }
+        }
+    }
+}
+/* Discography */
+@media (min-width: 576px) and (max-width: 992px){
+    .carousel{
+        width: 42vw;
+        .carousel-item{
+            width: 42vw;
+        }
+    }
+}
+@media (max-width: 576px) {
+    .carousel{
+        height: 100%;
+        margin-top: 19vh;
+    }
+    .carousel-item{
+        width: 3vw;
+    }
+    .title__carousel{
+        margin-top: 4vh;
+        img{
+            height: 9vh;
+        }
+    }
+}

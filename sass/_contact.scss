@@ -1,0 +1,36 @@
+.contact{
+  .contact__title{
+    img{
+      height: 12vh;
+    }
+  }
+  form{
+    width: 30vw;
+    height: 50vh;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    background: rgb(241, 231, 218);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 18px 15px 0px 2px #dd4067;
+  }
+  input,textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    border: none;
+  }
+  h1{
+    font-family: 'Anton', sans-serif;
+    font-size: 3rem;
+    color: rgb(240, 46, 88);
+    text-align: center;
+  }
+  .button{
+    background-color: rgb(243, 38, 99);
+    border-radius: 10px;
+  }
+}
